@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language Recognition</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+              font-family: sans-serif;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              display: flex; /* Added flexbox for centering */
+              justify-content: center; /* Horizontally centers content */
+              align-items: center; /* Vertically centers content */
+              min-height: 100vh; /* Ensures content fills viewport height */
+              background-image: url("{{ url_for('static', filename='background.jpg') }}");
+              background-repeat: no-repeat;
+              background-size: cover;
+              backdrop-filter: blur(4px);
+            }
+
+
+
+            nav {
+              background-color:#5F4C4C; /* Changed background color */
+              padding: 20px;
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              text-align: center;
+              color: white;
+            }
+
+
+
+
+            main {
+              padding-top: 80px; /* Adjust padding-top based on nav height */
+              text-align: center;
+            }
+
+            .main-div {
+                display: flex;
+                flex-direction: row; /* Display children in a row */
+                align-items: center;
+                justify-content: center
+                width: 900px;
+                padding: 0;
+            }
+
+            .img-div {
+                max-width: 100%; /* Take up 50% of the parent width */
+                width: fit-content;
+                box-shadow: 0px 5px 10px 0px rgba(0, 46, 231, 0.712);
+                border-radius: 15px;
+            }
+
+
+
+
+            img {
+              max-width: 480px;
+              height: auto;
+              border: none;
+              padding: 10px;
+              border-radius: 15px;
+            }
+
+            p {
+              font-size: 16px;
+              line-height: 1.5;
+            }
+
+            footer {
+              background-color: #f1f1f1;
+              padding: 20px;
+              text-align: center;
+            }
+
+            @media screen and (max-width: 830px) {
+
+                
+               
+                .main-div {
+                    display: flex;
+                    flex-direction: column; /* Display children in a row */
+                    align-items: center;
+                    width: 350px;
+                    padding: 0;
+                    margin-top: 60px;
+                    margin-left: 30px;
+                    
+                }
+
+
+               img {
+                max-width: 220px;
+                height: auto;
+                border: none;
+                padding: 10px;
+                border-radius: 15px;
+                }
+                nav {
+                background-color:#5F4C4C; /* Changed background color */
+                padding: 30px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                color: white;
+                }
+
+                #informative-fact{
+                    width: 350px;
+                }
+            }
+
+    </style>
+</head>
+<body>
+
+
+
+    <nav>
+        <center>
+            <h1>Sign Language Recognition</h1>
+        </center>
+    </nav>
+    <main>
+        <center>
+            <div class="main-div">
+                <div class="img-div">
+                    <img src="{{ url_for('video_feed') }}" width="640" height="400">
+                </div>
+            </div>
+
+        </center>
+    </main>
+</body>
+</html>
