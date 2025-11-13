@@ -1,3 +1,4 @@
+# sign language recognition using hand gestures
 import os
 from datetime import time
 from random import random
@@ -179,3 +180,4 @@ def informative_fact():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
