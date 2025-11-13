@@ -28,3 +28,5 @@ This will start the Flask web server.
 The terminal will display a URL (something like http://127.0.0.1:5000).
 
 Open that URL in your browser to test the gesture recognition functionality.
+
+note- first run collect_img.py and check how its working, You may need to update code to save photos, so go with script and check how many photos You want for each gesture.
