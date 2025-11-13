@@ -9,6 +9,7 @@ import cv2
 import mediapipe as mp
 import numpy as np
 import pickle
+import pandas
 
 app = Flask(__name__)
 
@@ -180,4 +181,5 @@ def informative_fact():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
 
