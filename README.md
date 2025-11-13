@@ -1,4 +1,4 @@
-# 🖐️ Sign Language Recognition Using Hand Gestures!
+# 🖐️ Sign Language Recognition Using Hand Gestures!!!
 
 This project uses computer vision and machine learning techniques to recognize **sign language gestures** made by hand through a webcam.
 
