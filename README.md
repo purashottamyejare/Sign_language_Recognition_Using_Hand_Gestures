@@ -31,5 +31,5 @@ Open that URL in your browser to test the gesture recognition functionality.
 
 note- first run collect_img.py and check how its working, You may need to update code to save photos, so go with script and check how many photos You want for each gesture.
 
-This line is edited directly on GitHub main branch.
+This line is edited locally for conflict practice.
 
